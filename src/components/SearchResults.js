@@ -1,11 +1,22 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
+
 const availableCabs = [
+ 
   { id: 1, name: 'Cab: Wagon R', type: 'Economy', price: '$30', estimatedArrival: '10 minutes', image: '/eco.png' },
   { id: 2, name: 'Cab: Honda city', type: 'Premium', price: '$50', estimatedArrival: '5 minutes', image: '/pre.jpg' },
   { id: 3, name: 'Cab: Mercedez Benz A-Class Limousine', type: 'Luxury', price: '$100', estimatedArrival: '3 minutes', image: '/mw.png' },
+
+
+  { id: 4, name: 'Cab: Alto 800', type: 'Economy', price: '$35', estimatedArrival: '12 minutes', image: '/alto.jpg' },
+  { id: 5, name: 'Cab: Ertiga', type: 'Premium', price: '$55', estimatedArrival: '20 minutes', image: '/ertiga.jpeg' },
+  { id: 6, name: 'Cab: Maruti Fornix', type: 'Premium', price: '$55', estimatedArrival: '5 minutes', image: '/maruti fronix.jpeg' },
+
+  { id: 7, name: 'Cab: Rolls-Royce Phantom', type: 'Luxury', price: '$200', estimatedArrival: '4 minutes', image: '/rolls-royce.png' },
+  
 ];
+
 
 function SearchResults() {
   const location = useLocation();

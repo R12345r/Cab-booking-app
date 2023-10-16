@@ -33,13 +33,15 @@ function Booking({ cabCategories }) {
           />
         </label>
         <div className="flex justify-center mt-6">
-          <button
-            onClick={handleBooking}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-1/4"
-          >
-            Confirm Booking
-          </button>
-        </div>
+  <button
+    onClick={handleBooking}
+    className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded sm:w-1/4 w-full"
+  >
+    Confirm Booking
+  </button>
+</div>
+
+
 
         {bookingConfirmed && (
           <div className="mt-6 text-center">
